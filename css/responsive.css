@@ -1,0 +1,58 @@
+@media screen and ( max-width : 1200px) {
+    #hero p {
+        font-size: .9rem;
+    }
+
+    #hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .navbar-nav a:hover {
+        width: 75px;
+    }
+}
+
+@media screen and ( max-width : 768px) {
+    #hero img {
+        width: 60%;
+    }
+
+    .social-icon {
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+    }
+
+    .btn-custom1 {
+        width: 80%;
+    }
+
+    #about p {
+        text-align: justify !important;
+    }
+
+    .navbar-nav a:hover {
+        width: 75px;
+    }
+}
+
+@media screen and ( max-width : 576px) {
+    hr {
+        width: 95%;
+    }
+
+    .navbar-nav a:hover {
+        width: 74px;
+    }
+
+    h1 {
+        font-size: 2rem !important;
+    }
+}
+
+@media screen and ( max-width : 350px) {
+    
+}

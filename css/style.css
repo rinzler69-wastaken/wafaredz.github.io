@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .logo-container img {
+        margin-bottom: 50px; /* Adjust the space between the logos */
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+:root {
+    --mainColor :#333333;
+    --secondaryColor : #414141;
+    --accentColor : #e40014;
+}
+
+body {
+    background-color: var(--secondaryColor);
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Start */
+
+header {
+    background-color: var(--mainColor);
+}
+
+.header-hr {
+    width: 100%;
+    height: 5px;
+    color: var(--accentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+nav {
+    background-color: var(--mainColor);
+}
+
+.nav-hr {
+    width: 100%;
+    height: 5px;
+    color: var(--accentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+.navbar-brand {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* Header End */
+
+section h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Navbar Start */
+
+.nav-link {
+    color: white;
+    font-weight: 400;
+    text-decoration: none; /* Remove underline if present */
+    padding: 10px; /* Add consistent padding */
+    display: inline-block; /* Ensure links are treated as block elements */
+    letter-spacing: 1px;  /* Adjust the value as needed */
+}
+
+.nav-link:hover {
+    color: #f57c00;
+}
+
+.nav-link-active {
+    color:var(--accentColor);
+    font-weight: bold;
+    text-decoration: none; /* Remove underline if present */
+    padding: 10px; /* Add consistent padding */
+    display: inline-block; /* Ensure links are treated as block elements */
+    letter-spacing: 1px;  /* Adjust the value as needed */
+}
+
+.navbar-toggler {
+    color: #e65100;
+    border-color: #f57c00;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffa724; /* Optional: Change color on hover */
+}
+
+
+.shadow-navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar End */
+
+/* Section Hero Start*/
+
+#hero {
+    color: white;
+    min-height: 84.5vh;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-top: 25px
+}
+
+#hero h2 {
+    font-weight: 300;
+    margin-top: 75px;
+    letter-spacing: 1px;  /* Adjust the value as needed */
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+#hero h1 span#greeting {
+    display: inline;
+}
+
+.logo-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    size:10cm; /* Adjust height as needed */
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping of logos */
+}
+
+.logo-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-custom1 {
+    background-color: var(--accentColor);
+    text-align: center;
+    color: white;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+.social-icon a {
+    margin-right: .7em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* Section Hero End*/
+
+/* About Start*/
+
+hr {
+    width: 40%;
+    height: 5px;
+    color: var(--accentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+#about h1 {
+    letter-spacing: 2px;  /* Adjust the value as needed */
+}
+
+#about h2 {
+    letter-spacing: 1px;
+    font-size: 32px;
+}
+
+#about p {
+    font-size:larger;
+    margin-top: 20px;
+}
+
+/* About End*/
+
+/*Projects Start*/
+
+#brands {
+    min-height: 51.2vh;
+    width: 100%;
+    color: white;
+}
+
+#brands img {
+    width: 12%;
+    margin: 10px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+#brands h2 {
+    font-weight: 300;
+    margin-top: 75px;
+    color: white;
+}
+
+.rinzler {
+    width:350px;
+    height:auto;
+    justify-items: center;
+    margin-bottom: 50px;
+}
+/* Projects End */
+
+/* Skill Start*/
+
+#skill {
+    min-height: 61.2vh;
+    width: 100%;
+    color: white;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 80px;
+}
+
+#skill h1 {
+    letter-spacing: 2px;  /* Adjust the value as needed */
+}
+
+/* Skill End*/
+
+/* Project Start*/
+
+#projects {
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+#projects h1 {
+    letter-spacing: 2px;
+}
+
+.btn-custom {
+    background-color: #ffa724;
+    color: white;
+}
+
+.btn-custom:hover {
+    box-shadow: 0 0 5px rgba(255, 166, 0, .8);
+}
+
+/* Project End */
+
+/* Gallery Start */
+
+#gallery {
+    min-height: 56vh;
+    width: 100%;
+    color: white;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+.card {
+    border: 5px solid var(--accentColor);
+}
+
+#carouselExampleIndicators {
+    border: 5px solid var(--accentColor);
+}
+
+/* Gallery End */
+
+/* Contact Start */
+
+#contact {
+    min-height: 81.6vh;
+    width: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-bottom: 80px;
+}
+
+#contact h1 {
+    letter-spacing: 2px;
+}
+
+.icon-contact ul {
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.icon-contact ul i {
+    font-size: 50px;
+}
+
+.icon-contact ul i li {
+    width: 150px;
+    height: 10px;
+    font-size: 50px;
+}
+
+form {
+    border: 5px solid var(--accentColor);
+    border-radius: 2rem;
+    padding: 50px;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+/* Contact End */
+
+/* Footer Start */
+
+.footer {
+    min-height: 150px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--secondaryColor);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 25px;
+}
+
+.social-icon-footer a {
+    margin-right: .7em;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.ig-social {
+    transition: transform 0.2s ease-in-out;
+    width: 50px;
+    height:auto;
+}
+
+.ig-social:hover {
+    transform: scale(1.1);
+}
+
+.yt-social {
+    transition: transform 0.2s ease-in-out;
+    width: 50px;
+    height:auto;
+}
+
+.yt-social:hover {
+    transform: scale(1.1);
+}
+
+.github-social {
+    transition: transform 0.2s ease-in-out;
+    width: 50px;
+    height:auto;
+}
+
+.github-social:hover {
+    transform: scale(1.1);
+}
+
+.footer ul {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--accentColor);
+}
+
+.footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Footer End */
